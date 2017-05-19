@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Muspract\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
