@@ -9,15 +9,15 @@ class Exercise extends Model
     protected $fillable = ['name', 'objective', 
        'difficulties', 'description', 'practices_done'];
     public function tag() {
-        return $this->hasMany('Muspract\Tag');
+        return $this->hasMany(Tag::class);
     }
     public function subtask() {
-       return $this->hasMany('Muspract\Subtask');
+       return $this->hasMany(Subtask::class);
     }
     public function instrument() {
-        return $this->belongsTo('Muspract\Instrument');
+        return $this->belongsTo(Instrument::class);
     }
     public function status() {
-        return $this->belongsTo('Muspract\Status'); 
+        return $this->belongsTo(Status::class); 
     }
 }
